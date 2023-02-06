@@ -1,0 +1,140 @@
+<html>
+
+<head>
+    <title>My Project Page - Affan</title>
+    <link rel="stylesheet" href="assets/css/myProject.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- NavBar -->
+    <nav>
+        <div class="left-side">
+            <a href="index.html">
+                <img src="assets/images/logo.png" id="image" />
+            </a>
+            <ul>
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="myProject.html">My Project</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right-side">
+            <a href="contactme.html">Contact Me</a>
+        </div>
+
+    </nav>
+
+    <!-- Navbar End -->
+
+    <!-- My Project -->
+    <!-- Form My Project -->
+    <div class="myProject">
+        <div class="myProject-form" style="background-color: #aee2ff;">
+            <div class="container-form">
+                <form onsubmit="addmyProject(event)">
+                    <h1>ADD MY PROJECT</h1>
+                    <div class="name">
+                        <label for="input-project-name">Project Name</label>
+                        <input id="project-name" />
+                    </div>
+                    <div class="date">
+                        <div class="date-start">
+                            <label for="input-start-date">Start Date</label>
+                            <input type="start-date" id="start-date">
+                        </div>
+                        <div class="date-end">
+                            <label for="input-end-date">End Date</label>
+                            <input type="end-date" id="end-date">
+                        </div>
+                    </div>
+                    <div class="description">
+                        <label class="description-label" for="description">Description</label>
+                        <textarea id="description"></textarea>
+                    </div>
+                    <div class="checkbox-full">
+                        <label for="technologies">Technologies</label>
+                        <div class="checkbox-list">
+                            <div>
+                                <input type="checkbox" name="php" id="php" style="margin-bottom: 20px;">
+                                <label for="php">PHP</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="python" id="python" style="margin-left: -20px;">
+                                <label for="python">Python</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="java" id="java">
+                                <label for="java">Java</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="javascript" id="javascript" style="margin-left: -20px;">
+                                <label for="javascript">Javascript</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <label>Upload Image</label>
+                        <label for="upload-image">
+                            <span>choose</span>
+                            <input type="file" id="upload-image" />
+                            <i class="fa-solid fa-paperclip"></i>
+                        </label>
+                    </div>
+                    <div class="button-group">
+                        <button class="submitButton">submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Form My Project End -->
+
+        <!-- Content My Project -->
+
+        <div class="myProject-list" id="contents">
+            <!-- Dynamic Content -->
+            <h1>MY PROJECT</h1>
+            <div>
+                <div class="myProject-container" id="project">
+                    <div class="myProject-item">
+                        <img src="assets/images/blog-img.png" />
+                        <a href="myProject-detail.html">
+                            <h3>Dumbways Mobile App - 2021</h3>
+                        </a>
+                        <div>
+                            <h5> Durasi : 3 Bulan</h5>
+                        </div>
+                        <p class="description">App that used for dumbways student, it was deployed and can downloaded on
+                            playstore.<br />Happy download</p>
+                        <div>
+                            <i class="fa-brands fa-PHP fa-2x"></i>
+                            <i class="fa-brands fa-Python fa-2x"></i>
+                            <i class="fa-brands fa-Java fa-2x"></i>
+                            <i class="fa-brands fa-js fa-2x"></i>
+                        </div>
+                        <div>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </div>
+                        <div>
+                            <p class="create_time"> 30 January </p>
+                            <p class="durationPost">1 Minutes Ago</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Content My Project End -->
+    </div>
+    <script src="assets/js/myProject.js"></script>
+</body>
+
+</html>

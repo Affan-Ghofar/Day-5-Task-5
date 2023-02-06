@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    font-family: poppins;
+}
+
+/* Style NavBar */
+nav {
+    display: flex;
+    background-color: #ffffe8;
+    height: 9vh;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    flex: 50%;
+}
+
+nav div.left-side{
+    padding-left: 100px;
+}
+
+nav div.right-side{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: flex;
+    margin-left: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+nav ul li a.active {
+    color: #00425a;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+nav .right-side a {
+    font-size: 15px;
+    padding: 5px 20px;
+    background-color: #00425a;
+    border-radius: 8px;
+    color: #fffbf5;
+    text-decoration: none;
+}
+
+/* My Project Form */
+.myProject-form {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container-form {
+    width: 500px;
+}
+
+.container-form h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.name label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.name input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px #a19999;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: 300; 
+}
+
+.date {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.date-start label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.date-start input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px #a19999;
+    padding: 8px;
+    margin: 5px -30px 30px 0;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.date-end label {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.date-end input {
+    width: 96%;
+    box-sizing: border-box;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px #a19999;
+    padding: 8px;
+    margin: 5px 0px 30px 10px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.description label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.description textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 0px solid #c4c4c4;
+    border-radius: 5px;
+    box-shadow: 4px 4px 7px #a19999;
+    padding: 10px 10px 90px 10px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: 200;
+    resize: none;
+}
+
+.checkbox-full label  {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.checkbox-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px 0;
+}
+
+.checkbox-list label {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+.checkbox-list input {
+    width: 10%;
+    height: 50%;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 4px #a19999;
+    margin-right: 5px;
+    margin-bottom: 30px;
+}
+
+.image label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.image > label:nth-child(2) input {
+    display: none;
+}
+
+.image > label:nth-child(2) {
+    display: block;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    box-shadow: 3px 3px 7px #a19999;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.image label:nth-child(2) > span {
+    background-color: #c4c4c4;
+    padding: 6px;
+    border-radius: 5px;
+    color: #C85C8E;
+    margin-left: -5px;
+}
+
+.image label:nth-child(2) i {
+    margin: 5px 10px;
+    color: #001736;
+    float: right;
+}
+
+.button-group {
+    display: flex;
+    justify-content: end;
+}
+
+.submitButton {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 30px;
+    margin-top: 10px;
+}
+
+.button-group button:hover {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    background-color: #006bff;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 30px;
+    margin-top: 10px;
+}
+
+/* My Project Form End */
+
+/* MY Project List */
+.myProject-list h1 {
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 80px;
+    font-weight: bolder;    
+}
+
+.myProject-list > div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.myProject-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.myProject-item {
+    width: 27%;
+    box-shadow: 0 3px 9px #a19999;
+    padding: 10px;
+    margin: 27px;
+    border-radius: 10px;
+}
+
+.myProject-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.myProject-item a {
+    text-decoration: none;
+}
+
+.myProject-item h3 {
+    margin-top: 15px;
+    color: black;
+}
+
+.myProject-item a:hover h3 {
+    color: #006bff;
+    text-decoration: underline;
+}
+
+.myProject-item h5 {
+    margin-bottom: 25px;
+    color: rgba(29,29,29,0.5);
+}
+
+.myProject-item .description {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.myProject-item i {
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+.myProject-item button {
+    width: 49%;
+    border: none;
+    background-color: #001736;
+    color: white;
+    padding: 5px 35px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.myProject-item button:hover {
+    width: 49%;
+    border: none;
+    background-color: #006bff;
+    color: white;
+    padding: 5px 35px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.myProject-item .create_time {
+    text-align: right;
+    margin-top: 15px;
+}
+
+.myProject-item .durationPost {
+    text-align: right;
+}
+/* My Project List End */
